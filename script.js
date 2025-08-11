@@ -47,3 +47,25 @@ const perguntas = [
         ]
     },
 ];
+
+let atual = 0;
+let perguntaAtual;
+
+function mostraPergunta(){
+    perguntaAtual = perguntas[atual];
+    caixaPerguntas.textContent = perguntaAtual.enunciado;
+    mostraALternativa();
+}
+
+function mostraALternativa(){
+    for(const alternativas of perguntaAtual.alternativas){
+        const botaoAlternativa = document.createElement("button");
+        botaoAlternativa.textContent = alternativas.texto;
+        botaoAlternativa.addEventListener("click", function);{
+            atual++;
+        }
+        caixaAlternativas.appendChild(botaoAlternativa);
+    }
+}
+
+mostraPergunta();
