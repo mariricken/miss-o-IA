@@ -16,8 +16,36 @@ const perguntas [
  }
 
 {
-    enunciado: "Pergunta 1",
+    enunciado: "Pergunta 2",
+        Alternativas: ["Alternativa 1","Alternativas 2"]
+    }
+{
+
+    enunciado: "Pergunta 3",
         Alternativas: ["Alternativa 1","Alternativas 2"]
     }
 
-]//fecha lista
+    {
+
+    enunciado: "Pergunta 4",
+        Alternativas: ["Alternativa 1","Alternativas 2"]
+    }
+
+    {
+
+    enunciado: "Pergunta 5",
+        Alternativas: ["Alternativa 1","Alternativas 2"]
+    }
+
+
+];
+
+let atual = 0
+let perguntaAtual;
+
+function mostraPergunta{
+   perguntaAtual = pergunta[atual];
+   caixaPerguntas.textContent = perguntaAtual.enunciado;
+}
+
+mostraPergunta();
