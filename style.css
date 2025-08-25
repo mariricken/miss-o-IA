@@ -16,3 +16,18 @@ body{
     .caixa-principal{
         background-color: var(--color-principal);
     }
+
+    h3{
+        color: var(--color-destaque);
+    }
+    button{
+        background-color: var(--color-secundaria);
+        color: var(--color-texto);
+        border-radius: 15px;
+        padding: 15px;
+        transition: background-color 0,3s;
+    }
+    button:hover{
+        background-color: var(--color-destaque);
+        color: var(--color-principal);
+    }
